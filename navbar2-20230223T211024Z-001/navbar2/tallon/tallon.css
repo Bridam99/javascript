@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  width: 100vw;
+}
+
+.alcontainer {
+  border: 1px solid green;
+  float: left;
+  padding: 10px;
+  width: 50%;
+}
+
+@media screen and (max-width: 400px) {
+  .alcontainer {
+    float: none;
+    width: 100%;
+  }
+}

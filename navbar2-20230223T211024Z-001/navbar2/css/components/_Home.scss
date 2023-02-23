@@ -1,0 +1,105 @@
+header {
+  align-items: center;
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  padding: 5px 10px 5px 20px;
+  background-color: steelblue;
+}
+
+nav {
+  background-color: $royalblue;
+  color: whitesmoke;
+  list-style-type: none;
+  overflow: hidden;
+
+  li {
+    float: left;
+    width: 20%;
+
+    a {
+      align-items: center;
+      background-color: $royalblue;
+      color: whitesmoke;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      width: 100%;
+
+      &:hover:not(.active) {
+        background-color: tomato;
+      }
+    }
+  }
+}
+
+nav > li {
+  display: none;
+}
+
+#tartalom {
+  padding: 40px;
+
+  h1,
+  p {
+    text-align: center;
+  }
+}
+
+#home {
+  text-align: center;
+}
+
+#chat,
+#help,
+#info,
+#hir {
+  display: none;
+}
+
+.active {
+  background-color: slateblue;
+}
+
+img {
+  width: 500px;
+}
+
+footer {
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    background-color: white;
+    margin-top: 10px;
+    overflow: visible;
+
+    li {
+      float: none;
+      width: 100px;
+
+      a {
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  nav > li {
+    display: block;
+    width: 100%;
+  }
+
+  #rendes {
+    display: none;
+  }
+
+  nav > li a:hover {
+    background-color: $royalblue;
+  }
+}

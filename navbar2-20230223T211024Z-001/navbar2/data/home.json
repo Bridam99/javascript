@@ -1,0 +1,11 @@
+{
+  "cim": "Nyitó Lap",
+  "tartalom": "Üdvözlünk az oldalon",
+  "kep": [
+    "./images/kep1.jpg",
+    "./images/kep2.jpg",
+    "./images/kep3.jpg",
+    "./images/kep4.jpg",
+    "./images/kep5.jpg"
+  ]
+}
